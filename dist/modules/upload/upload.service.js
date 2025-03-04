@@ -136,7 +136,7 @@ let UploadService = class UploadService {
                     Bucket: (0, utils_1.removeSpecialCharacters)(Bucket),
                     Region: (0, utils_1.removeSpecialCharacters)(Region),
                     Key: `${dir}/${filename}`,
-                    StorageClass: 'STANDARD',
+                    StorageClass: 'INTELLIGENT_TIERING',
                     Body: buffer,
                 }, async (err, data) => {
                     if (err) {
